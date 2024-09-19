@@ -8,7 +8,26 @@
 Install dependencies:
 
 ```bash
-pip install scipy
+pip install clip-as-service
+```
+
+On Windows with `Python 3.12`, there are issues installing `clip-as-service 0.8.3`.
+The workaround is as follows:
+
+```bash
+pip install --upgrade pip setuptools wheel
+pip install jina>=3.12.0 --no-build-isolation --no-deps
+```
+
+Then, install the dependencies from `requirements.txt`.
+After that, attempt to install the cas, ignoring dependencies and bypassing build isolation:
+
+```bash
+git clone https://github.com/jina-ai/clip-as-service.git
+cd server
+pip install . --no-build-isolation --no-deps
+cd ../client
+pip install . --no-build-isolation --no-deps
 ```
 
 Copy `.env.sample` and create your `.env` file, replacing placeholder values with actual values.

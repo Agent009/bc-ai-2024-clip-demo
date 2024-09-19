@@ -1,8 +1,19 @@
+import os
+
 import torch
+from dotenv import load_dotenv, find_dotenv
+
+# ---------- Load environment variables
+load_dotenv(find_dotenv())
+CLIP_SERVER_ADDRESS = os.getenv("CLIP_SERVER_ADDRESS")
 
 
 def get_data_path():
     return "./data/"
+
+
+def get_clip_server_address():
+    return CLIP_SERVER_ADDRESS
 
 
 def check_cuda():
