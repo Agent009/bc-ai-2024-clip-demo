@@ -1,7 +1,8 @@
-# Run a simple CLIP demo using the Hugging Face Transformers library
+# CLIP demos using the Hugging Face Transformers library and Clip-As-Service
 
 ## Instructions / README
 * [Lesson-20 / Exercise 3](https://github.com/Encode-Club-AI-Bootcamp/Generative-AI-Applications/tree/main/Lesson-20#multimodal-models-with-computer-vision)
+* [Lesson-20 / Implementing Computer Vision Features in a Chat Application](https://github.com/Encode-Club-AI-Bootcamp/Generative-AI-Applications/tree/main/Lesson-20#implementing-computer-vision-features-in-a-chat-application)
 
 ## Setup
 
